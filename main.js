@@ -3,7 +3,7 @@ let arr = [];
 let height=[];
 let outer = document.getElementById('outer');
 for (let i = 0; i < 200; i++) {
-    let random = Math.random() * 350;
+    let random = (Math.random() * 350) + 20;
     height[i]=random;
     let div = document.createElement('div');
     arr[i] = div;
@@ -32,7 +32,7 @@ function newsize()
             arr.pop();
         }
         for (let i = 0; i < 15; i++) {
-            let random = Math.random() * 350;
+            let random = (Math.random() * 350) + 20;
             height[i]=random;
             let div = document.createElement('div');
             arr[i] = div;
@@ -52,7 +52,7 @@ function newsize()
             arr.pop();
         }
         for (let i = 0; i < 30; i++) {
-            let random = Math.random() * 350;
+            let random = (Math.random() * 350) + 20;
             height[i]=random;
             let div = document.createElement('div');
             arr[i] = div;
@@ -72,7 +72,7 @@ function newsize()
             arr.pop();
         }
         for (let i = 0; i < 50; i++) {
-            let random = Math.random() * 350;
+            let random = (Math.random() * 350) + 20;
             height[i]=random;
             let div = document.createElement('div');
             arr[i] = div;
@@ -92,7 +92,7 @@ function newsize()
             arr.pop();
         }
         for (let i = 0; i < 100; i++) {
-            let random = Math.random() * 350;
+            let random = (Math.random() * 350) + 20;
             height[i]=random;
             let div = document.createElement('div');
             arr[i] = div;
@@ -112,7 +112,7 @@ function newsize()
             arr.pop();
         }
         for (let i = 0; i < 200; i++) {
-            let random = Math.random() * 350;
+            let random = (Math.random() * 350) + 20;
             height[i]=random;
             let div = document.createElement('div');
             arr[i] = div;
@@ -120,5 +120,14 @@ function newsize()
             outer.appendChild(arr[i]);
         }
     }
+}
 
+//Speed Setting
+document.getElementById('speed_scroller').addEventListener('input',getspeed);
+
+function getspeed()
+{
+    let speed=document.getElementById('speed_scroller').value;
+    speed++;
+    return speed;
 }
