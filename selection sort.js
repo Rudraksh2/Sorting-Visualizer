@@ -17,7 +17,7 @@ function selectionSort(){
     for(let j=i+1;j<n;j++){
 
       setTimeout(() => {
-        arr[j+1].style.backgroundColor = 'yellow';
+        arr[j].style.backgroundColor = 'yellow';
       }, time = time + speed_var);
       setTimeout(function(){
       if(height[j] < height[k]){
@@ -27,7 +27,9 @@ function selectionSort(){
         k = j;
         arr[k].style.backgroundColor = 'red';
       }
-        arr[j+1].style.backgroundColor = 'blue';
+      else{
+        arr[j].style.backgroundColor = 'blue';
+      }
       },time = time + speed_var);
 
     }
