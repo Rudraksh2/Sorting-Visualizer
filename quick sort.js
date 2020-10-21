@@ -1,10 +1,15 @@
 //QUICK SORT
-document.getElementById('quick_sort_button').addEventListener('click', quickSort);
+document.getElementById('quick_sort_button').addEventListener('click', quick);
+
+function quick(){
+  quickSort(0,arr.length);
+}
 
 function partition(l,h){
 
   let pivot = height[l];
-  let i = l, j = h;
+  let i = l;
+  let j = h;
 
   do{
     do{i++;}while(height[i] <= pivot);
