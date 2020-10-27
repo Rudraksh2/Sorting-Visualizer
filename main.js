@@ -136,3 +136,23 @@ function getspeed()
     speed++;
     return speed;
 }
+
+let t = 0;
+
+function update_height(x,ind)
+{
+  let s = getspeed();
+  let speed_var = 600 / s;
+    setTimeout(() => {
+    arr[ind].style.height=`${x}px`;
+}, t=t+speed_var);
+}
+
+function update_color(color,ind)
+{
+  let s = getspeed();
+  let speed_var = 600 / s;
+    setTimeout(() => {
+    arr[ind].style.backgroundColor=color;
+}, t=t+speed_var);
+}
