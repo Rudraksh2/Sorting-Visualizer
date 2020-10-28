@@ -35,5 +35,4 @@ function bubbleSort() {
   setTimeout(() => {
     arr[0].style.backgroundColor = 'green';
   }, time = time + speed_var);
-
 }

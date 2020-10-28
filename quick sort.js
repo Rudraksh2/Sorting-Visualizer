@@ -1,9 +1,11 @@
 //QUICK SORT
 document.getElementById('quick_sort_button').addEventListener('click', quick);
 function quick() {
+  disable();
   t = 0;
   let l = 0, r = arr.length;
   quickSort(l, r);
+  enable();
 }
 
 function partition(l, h) {

@@ -1,9 +1,11 @@
 //MERGE SORT
 document.getElementById('merge_sort_button').addEventListener('click', mergeSort);
 function mergeSort() {
+    disable();
     t = 0;
     let l = 0, h = arr.length - 1;
     MergeSort(l, h);
+    enable();
 }
 
 function Merge(l, mid, h) {

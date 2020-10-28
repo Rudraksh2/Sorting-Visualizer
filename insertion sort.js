@@ -1,9 +1,10 @@
 //INSERTION SORT
 document.getElementById('insertion_sort_button').addEventListener('click', insertionSort);
-let s = getspeed();
-let speed_var = 300 / s;
+
 function insertionSort() {
-    t = 0;
+  let s = getspeed();
+  let speed_var = 300 / s;
+  t=0;
     let n = arr.length;
     for (let i = 0; i < n; i++) {
         let key,j;
