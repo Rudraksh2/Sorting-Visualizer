@@ -2,12 +2,12 @@
 let arr = [];
 let height=[];
 let outer = document.getElementById('outer');
-for (let i = 0; i < 200; i++) {
+for (let i = 0; i < 50; i++) {
     let random = (Math.random() * 350) + 20;
     height[i]=random;
     let div = document.createElement('div');
     arr[i] = div;
-    arr[i].style.cssText = `display:inline-block ; background-color: blue ; height:${random}px ; width : 3px ; margin-right:1px `;
+    arr[i].style.cssText = `display:inline-block ; background-color: blue ; height:${random}px ; width : 15px ; margin-right:1px `;
     outer.appendChild(arr[i]);
 }
 
